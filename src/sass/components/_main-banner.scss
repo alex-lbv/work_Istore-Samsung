@@ -30,14 +30,14 @@
     @include screen(xl) {
       padding: 25px 15px 0;
       width: 90% !important;
-      height: 490px;
+      height: 430px;
       box-shadow: 0px 2px 24px $black-opacity-05;
       border-radius: 20px;
     }
 
     @include screen(l) {
       padding-top: 130px;
-      height: 515px;
+      height: 565px;
     }
 
     p {
@@ -78,27 +78,26 @@
         display: block;
         margin: auto;
       }
-
-      @include screen(l) {
-        position: absolute;
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-      }
     }
 
     &.slide-1 {
+      background-color: $black;
+
       @include screen(xl) {
         justify-content: space-between;
-        background-color: $black;
       }
 
       img {
         @include screen(xl) {
           max-width: 400px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 50px;
+          left: 20px;
+          margin: auto;
+          width: 650px;
         }
       }
 
@@ -110,50 +109,74 @@
     }
 
     &.slide-2 {
+      background-color: $black;
+
       @include screen(xl) {
         justify-content: space-between;
-        background: $dark-blue;
-      }
-
-      div {
-        @include screen(l) {
-          padding-left: 100px;
-        }
-      }
-    }
-
-    &.slide-3 {
-      @include screen(xl) {
-        justify-content: space-between;
-        background: $yellow-2;
       }
 
       img {
         @include screen(xl) {
           max-width: 300px;
         }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          right: 150px;
+          width: 400px;
+        }
       }
 
       div {
+        &:first-of-type {
+          @include screen(l) {
+            padding-left: 100px;
+          }
+        }
+      }
+    }
+
+    &.slide-3 {
+      background-color: $white;
+
+      @include screen(xl) {
+        justify-content: space-between;
+      }
+
+      img {
+        @include screen(xl) {
+          max-width: 300px;
+        }
+
         @include screen(l) {
-          padding-left: 100px;
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          right: 50px;
+          margin: auto;
+          width: 600px;
+        }
+      }
+
+      div {
+        &:first-of-type {
+          @include screen(l) {
+            padding-left: 100px;
+          }
         }
       }
 
       p {
         color: $main-black-color;
-      }
-
-      .btn {
-        color: $second-black-color;
-        border: 1px solid $second-black-color;
       }
     }
 
     &.slide-4 {
+      background-color: $white;
+
       @include screen(xl) {
         justify-content: space-between;
-        background: $gray-2;
       }
 
       img {
@@ -165,6 +188,15 @@
           margin: auto;
           width: 100%;
           max-width: 350px;
+        }
+
+        @include screen(l) {
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          right: 0;
+          margin: auto;
+          width: 750px;
         }
       }
 
@@ -176,36 +208,6 @@
 
       p {
         color: $main-black-color;
-      }
-
-      .btn {
-        color: $second-black-color;
-        border: 1px solid $second-black-color;
-      }
-    }
-
-    &.slide-5 {
-      @include screen(xl) {
-        justify-content: space-between;
-        background: $black;
-      }
-
-      img {
-        @include screen(xl) {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          margin: auto;
-          width: 100%;
-          max-width: 350px;
-        }
-      }
-
-      div {
-        @include screen(l) {
-          padding-left: 100px;
-        }
       }
     }
 
@@ -217,7 +219,7 @@
       max-width: 150px;
       color: $white;
       font: 600 15px/22px FuturaPT;
-      background: transparent;
+      background: $black;
       border: 1px solid $white;
       border-radius: 8px;
       box-shadow: none;
@@ -227,10 +229,9 @@
       }
 
       &:hover {
-        background: $green;
-        box-shadow: 0px 3px 10px $green-opacity-35;
-        border-color: $green;
-        color: $white;
+        background: $main-color;
+        box-shadow: 0px 3px 10px $main-color-opacity-4;
+        border-color: $main-color;
       }
     }
   }
