@@ -190,7 +190,7 @@
 
     a {
       border-bottom: 1px solid transparent;
-      font: 500 16px/22px FuturaPT;
+      font: normal 16px/22px FuturaPT;
       color: $main-black-color;
       transition: border .3s;
 
@@ -498,8 +498,8 @@
       }
 
       @include screen(l) {
-       /*  max-width: 960px; */
-       justify-content: space-between;
+        /*  max-width: 960px; */
+        justify-content: space-between;
         z-index: 5;
       }
     }
@@ -586,20 +586,6 @@
           @include screen(l) {
             margin-right: 15px;
           }
-        }
-
-        &:last-of-type {
-          .header__sublist {
-            &>li>a::after {
-              left: -20px;
-            }
-          }
-
-          .header__innerlist {
-            transform: translateX(-226px);
-            top: 55px;
-          }
-
         }
       }
     }
@@ -842,7 +828,7 @@
   &__banner {
     position: relative;
     padding: 15px 25px 15px 105px;
-    width: 305px;
+    width: 275px;
     text-align: right;
     background-color: $gray-light-4;
     border-radius: 8px;
@@ -858,6 +844,8 @@
       position: absolute;
       left: 15px;
       bottom: 0;
+      top: 0;
+      margin: auto;
       mix-blend-mode: darken;
     }
 

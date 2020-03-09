@@ -1,1 +1,1 @@
-<h1>XiaomiStore<h1>
+<h1>Samsung<h1>
