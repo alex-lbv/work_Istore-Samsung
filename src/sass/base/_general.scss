@@ -188,8 +188,8 @@ button {
     margin: auto !important;
     height: 8px !important;
     width: 8px !important;
-    border-bottom: 2px solid $main-dark-color !important;
-    border-right: 2px solid $main-dark-color !important;
+    border-bottom: 2px solid $gray-32 !important;
+    border-right: 2px solid $gray-32 !important;
     pointer-events: none;
     position: absolute;
     transform-origin: 66% 66%;
@@ -218,6 +218,12 @@ button {
   &.open .list {
     width: 100%;
   }
+}
+
+.options .option_link.active,
+.options .option_link:focus,
+.options .option_link:hover {
+  background-color: $main-color !important;
 }
 
 .position-right {
@@ -360,7 +366,7 @@ select {
 
 .scroll-top {
   position: fixed;
-  z-index: 1000;
+  z-index: 299;
   display: inline-block;
   width: 50px;
   height: 50px;

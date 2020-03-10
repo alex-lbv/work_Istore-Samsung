@@ -60,9 +60,12 @@
   }
 
   &:first-of-type {
-    @include screen(xl) {
+    @include screen(x) {
       margin-bottom: 20px;
-      height: 450px;
+    }
+
+    @include screen(xl) {
+      height: 390px;
     }
 
     @include screen(sm) {
@@ -85,18 +88,14 @@
 
       @include screen(l) {
         top: 0;
-        right: 15px;
+        right: -50px;
         margin: auto;
-        width: 366px;
+        width: 454px;
       }
     }
   }
 
   &:last-of-type {
-    @include screen(xl) {
-      height: 450px;
-    }
-
     img {
       @include screen(xl) {
         width: 100%;
@@ -108,9 +107,8 @@
       }
 
       @include screen(l) {
-        top: 0;
-        right: 60px;
-        max-width: 240px;
+        right: 0;
+        width: 327px;
       }
     }
   }
