@@ -25,25 +25,9 @@
 
       &--phone {
         @include screen(l) {
-          background: url("../img/pic/bg/catalog-header.jpg") no-repeat, $gray-33;
+          background: url("../img/pic/bg/catalog-header.jpg") no-repeat, $black-2;
           background-position: 650px;
           background-size: contain;
-        }
-      }
-
-      &--home {
-        @include screen(l) {
-          background: url("../img/pic/bg/catalog-header-2.jpg") no-repeat, $white;
-          background-size: contain;
-          background-position: right;
-        }
-      }
-
-      &--tv {
-        @include screen(l) {
-          background: url("../img/pic/bg/catalog-header-3.jpg") no-repeat, $violet;
-          background-size: contain;
-          background-position: right;
         }
 
         .breadcrumbs.uk-subnav>*>:first-child {
@@ -65,26 +49,69 @@
         }
       }
 
-      &--gadjets {
+      &--tv {
         @include screen(l) {
-          background: url("../img/pic/bg/catalog-header-4.jpg") no-repeat, $white;
-          background-position: 700px;
-          background-size: contain;
+          background: url("../img/pic/bg/catalog-header-2.jpg") no-repeat, $black-2;
+          background-size: cover;
+        }
+
+        .breadcrumbs.uk-subnav>*>:first-child {
+          @include screen(l) {
+            color: $white !important;
+          }
+        }
+
+        .breadcrumbs.uk-subnav>.uk-active>a:hover {
+          @include screen(l) {
+            color: $white-opacity-6 !important;
+          }
+        }
+
+        .title {
+          @include screen(l) {
+            color: $white;
+          }
         }
       }
 
-      &--sport {
+      &--tablets {
         @include screen(l) {
-          background: url("../img/pic/bg/catalog-header-5.jpg") no-repeat, $gray-34;
-          background-position: right;
+          background-image: url("../img/pic/bg/catalog-header-3.jpg");
+          background-size: 374px auto;
+          background-position: 700px 8px;
+        }
+      }
+
+      &--watch {
+        @include screen(l) {
+          background: url("../img/pic/bg/catalog-header-4.jpg") no-repeat, $black-2;
+          background-position: 700px;
           background-size: contain;
+        }
+
+        .breadcrumbs.uk-subnav>*>:first-child {
+          @include screen(l) {
+            color: $white !important;
+          }
+        }
+
+        .breadcrumbs.uk-subnav>.uk-active>a:hover {
+          @include screen(l) {
+            color: $white-opacity-6 !important;
+          }
+        }
+
+        .title {
+          @include screen(l) {
+            color: $white;
+          }
         }
       }
 
       &--accessories {
         @include screen(l) {
-          background: url("../img/pic/bg/catalog-header-6.jpg") no-repeat, #E7E6E4;
-          background-position: 700px;
+          background-image: url("../img/pic/bg/catalog-header-5.jpg");
+          background-position: right;
           background-size: contain;
         }
       }
