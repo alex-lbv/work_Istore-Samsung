@@ -201,7 +201,6 @@
   }
 
   &__contacts {
-    width: 26%;
     white-space: nowrap;
 
     span {
@@ -587,6 +586,27 @@
             margin-right: 15px;
           }
         }
+
+        &:last-of-type {
+          &>a {
+            padding: 0 0 0 31px;
+          }
+
+          .header__sublist {
+            right: 0;
+
+            &>li>a {
+              &::after {
+                left: -20px;
+              }
+            }
+          }
+
+          .header__innerlist {
+            transform: translateX(-226px);
+          }
+
+        }
       }
     }
   }
@@ -727,6 +747,13 @@
         z-index: 1001;
         background: transparent;
         display: none;
+      }
+    }
+
+    &>li:last-of-type>a {
+      &::after {
+        bottom: 0;
+        height: 75px;
       }
     }
   }
