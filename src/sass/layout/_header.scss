@@ -174,7 +174,6 @@
     img {
       @media (max-width: 374px) {
         width: 80px !important;
-        height: 13px;
       }
 
       @include screen(xl) {
@@ -589,7 +588,9 @@
 
         &:last-of-type {
           &>a {
-            padding: 0 0 0 31px;
+            @include screen(l) {
+              padding: 0 0 0 31px;
+            }
           }
 
           .header__sublist {
